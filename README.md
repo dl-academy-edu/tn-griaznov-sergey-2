@@ -1,2 +1,4 @@
 # tn-griaznov-sergey-2
-Учебный репозиторий студента Грязнова Сергея 2 модуль
+
+* Студент: https://t.me/SerzhKep
+* Преподаватель: https://www.behance.net/tati_nabokova
