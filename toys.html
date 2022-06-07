@@ -4,83 +4,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Toys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/toys.css">
 </head>
 <body>
-    <header>
-        <a href=""><img src="#" alt=""></a>
+    <header class="header container">
+        <a href="index.html"><img src="images/header/logo.png" alt=""></a>
         <nav>
-            <ul>
+            <ul class="header__nav undotted">
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="blog.html" class="header__link-1">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Catalog</a>
+                    <a href="catalog.html" class="header__link-1">Catalog</a>
                 </li>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="#" class="header__link-1">About Us</a>
                 </li>
             </ul>
         </nav>
-        <img src="#" alt="">
-        <a href="#">Contact  Us</a>
+        <a href="#"><img src="images/header/search.png" alt="#" class="header__look"></a>
+        <a href="contact.html" class="header__link-2">Contact  Us</a>
     </header>
-    <section class="parameters">
-        <h1>Toy for kids</h1>
-        <nav class="breadcrumbs"></nav>
-        <div class="parameters runners"></div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#"><img src="#" alt=""></a>
+    <section>
+        <div class="toys container">
+            <h1 class="h1">Toy for kids</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+            <li><img src="images/common/breadcrumbs/vector.png" alt=""></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><img src="images/common/breadcrumbs/vector.png" alt=""></li>
+            <li><p>Toys</p></li>
+        </ul>
+        </div>
+        <div class="settings__background">
+            <div class="container">
+                <div class="settings__options">
+                    <div class="settings__cost">
+                        <h3>Cost</h3>
+                        <input class="slider" type="range" id="cost" min="0" max="500" value="110" step="10">
+                        <div class="settings__number">
+                            <span>0</span>
+                            <span>500</span>
+                        </div>
+                    </div>
+                    <div class="settings__color">
+                        <h3>Color</h3>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="color-black" class="checkbox__input-toys" checked>
+                                <label for="color-black" class="checkbox__label-toys">Black</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="color-blue" class="checkbox__input-toys">
+                                <label for="color-blue" class="checkbox__label-toys">Blue</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="color-green" class="checkbox__input-toys">
+                                <label for="color-green" class="checkbox__label-toys">Green</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="color-white" class="checkbox__input-toys">
+                                <label for="color-white" class="checkbox__label-toys">White</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings__delivery">
+                        <h3>Delivery</h3>
+                        <ul class="undotted">
+                            <li>
+                                <input type="radio" id="del_free" name="delivery-radio" class="radio-input">
+                                <label for="del_free" class="radio-label">Free shipping</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="del_fast" name="delivery-radio" class="radio-input" checked>
+                                <label for="del_fast" class="radio-label">Fast shipping</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="settings__amount">
+                        <h3>Amount</h3>
+                        <div class="settings__line">
+                            <ul class="buttons undotted">
+                                <li class="buttons__item">
+                                    <input type="radio" id="amount_five" name="amount-radio" class="radio-input_button" checked>
+                                    <label for="amount_five" class="radio-label_button">0-5</label>
+                                </li>
+                                <li class="buttons__item">
+                                    <input type="radio" id="amount_twenty" name="amount-radio" class="radio-input_button">
+                                    <label for="amount_twenty" class="radio-label_button">10-20</label>
+                                </li>
+                                <li class="buttons__item">
+                                    <input type="radio" id="amount_fifty" name="amount-radio" class="radio-input_button">
+                                    <label for="amount_fifty" class="radio-label_button">20-50</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button type="submit" class="button">Apply</button>
+                </div>
+            </div>
+        </div>
+        <div class="toys container">
+            <ul class="toys__list undotted">
+                <li class="toys__item">
+                    <a href="#">
+                        <div class="toys__img">
+                            <img src="images/toys/toys1.png" alt="toy picture" width="380" height="385">
+                            <div>Learn more</div>
+                        </div>
+                        <h3>SHARKY BEAN BAG CHAIR COVER</h3>
+                        <p>$60.00 USD</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">SHARKY BEAN BAG CHAIR COVER</a>
+                <li class="toys__item">
+                    <a href="#">
+                        <div class="toys__img">
+                            <img src="images/toys/toys2.png" alt="toy picture" width="380" height="385">
+                            <div>Learn more</div>
+                        </div>
+                        <h3>BRASS DECO FRAMES</h3>
+                        <p>$66.00 USD</p>
+                    </a>
                 </li>
-                <li class="money">$60.00 USD</li>
-                <li>
-                    <a href="#"><img src="#" alt=""></a>
+                <li class="toys__item">
+                    <a href="#">
+                        <div class="toys__img">
+                            <img src="images/toys/toys3.png" alt="toy picture" width="380" height="385">
+                            <div>Learn more</div>
+                        </div>
+                        <h3>CIBO FULL APRON</h3>
+                        <p>$60.00 USD</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">BRASS DECO FRAMES</a>
+                <li class="toys__item">
+                    <a href="#">
+                        <div class="toys__img">
+                            <img src="images/toys/toys4.png" alt="toy picture" width="380" height="385">
+                            <div>Learn more</div>
+                        </div>
+                        <h3>GATCHA GATCHA GUMBALL MACHINE</h3>
+                        <p>$56.00 USD</p>
+                    </a>
                 </li>
-                <li class="money">$66.00 USD</li>
-                <li>
-                    <a href="#"><img src="#" alt=""></a>
+                <li class="toys__item">
+                    <a href="#">
+                        <div class="toys__img">
+                            <img src="images/toys/toys5.png" alt="toy picture" width="380" height="385">
+                            <div>Learn more</div>
+                        </div>
+                        <h3>CHRISTMAS ADVENT SCENTED CANDLE</h3>
+                        <p>$29.00 USD</p>
+                    </a>
                 </li>
-                <li>
-                    <a href="#">CIBO FULL APRON</a>
+                <li class="toys__item">
+                    <a href="#">
+                        <div class="toys__img">
+                            <img src="images/toys/toys6.png" alt="toy picture" width="380" height="382">
+                            <div>Learn more</div>
+                        </div>
+                        <h3>TANGLE SPINNING TEA LIGHT</h3>
+                        <p>$56.00 USD</p>
+                    </a>
                 </li>
-                <li class="money">$60.00 USD</li>
-                <li>
-                    <a href="#"><img src="#" alt=""></a>
+            </ul> 
+        </div>  
+        <div class="pagination">
+            <a href="#" class="pagination__back"></a>
+            <ul class="pagination__numbers undotted">
+                <li class="pagination__num pagination__num_active">
+                    <a href="#">1</a>
                 </li>
-                <li>
-                    <a href="#">GATCHA GATCHA GUMBALL MACHINE</a>
+                <li class="pagination__num">
+                    <a href="#">2</a>
                 </li>
-                <li class="money">$56.00 USD</li>
-                <li>
-                    <a href="#"><img src="#" alt=""></a>
+                <li class="pagination__num">
+                    <a href="#">3</a>
                 </li>
-                <li>
-                    <a href="#">CHRISTMAS ADVENT SCENTED CANDLE</a>
+                <li class="pagination__num">
+                    <a href="#">4</a>
                 </li>
-                <li class="money">$29.00 USD</li>
-                <li>
-                    <a href="#"><img src="#" alt=""></a>
-                </li>
-                <li>
-                    <a href="#">TANGLE SPINNING TEA LIGHT</a>
-                </li>
-                <li class="money">$56.00 USD</li>
             </ul>
-            <div class=""></div>
-        </nav>
+            <a href="#" class="pagination__forward"></a>
+        </div>
     </section>
-    <footer>
-        <p class="navigation">
-            <p>Navigation</p>
-            <nav>
+    <footer class="footer">
+        <div class="footer__basic container">
+            <div class="footer_basic1 undotted">
+                <p class="footer-title">Navigation</p>
+                <hr class="line1">
                 <ul>
                     <li>
                         <a href="#">About Us</a>
@@ -88,72 +204,88 @@
                     <li>
                         <a href="#">Blog</a>
                     </li>
-                    <li>
+                    <li> 
                         <a href="#">Design Services</a>
                     </li>
-                    <li>
+                    <li> 
                         <a href="#">Featured On</a>
                     </li>
-                    <li>
+                    <li> 
                         <a href="#">2018 Holiday Catalog</a>
                     </li>
-                    <li>
+                    <li> 
                         <a href="#">Shop By Designer</a>
                     </li>
                 </ul>
-            </nav>
-            <p>Company Rating</p>
-            <div class="stars">
-                <button><img src="#" alt=""></button>
-                <button><img src="#" alt=""></button>
-                <button><img src="#" alt=""></button>
-                <button><img src="#" alt=""></button>
-                <button><img src="#" alt=""></button>
+            </div>
+            <div class="footer_basic2">  
+                <p class="footer-title">Customer Information</p>
+                <hr class="line1">
+                <ul>
+                    <li> 
+                        <a href="#">Contact Us</a>
+                    </li>
+                    <li> 
+                        <a href="#">Sale Exclusions</a>
+                    </li>
+                    <li> 
+                        <a href="#">Shipping & Returns</a>
+                    </li>
+                    <li> 
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li> 
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li> 
+                        <a href="#">Search</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_basic3">             
+                <p class="footer-title">Connect</p>
+                <hr class="line1">
+                <input type="email" name="#" id="#">
+                <a href="#" class="button">buy now</a>
+                <ul>
+                    <li>
+                        <img src="#" alt="#">
+                    </li>
+                    <li>
+                        <img src="#" alt="#">
+                    </li>
+                    <li>
+                        <img src="#" alt="#">
+                    </li>
+                    <li>
+                        <img src="#" alt="#">
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="customer_information">
-            <p>Customer Information</p>
-            <ul>
-                <li>
-                    <a href="#">Contact Us</a>
-                </li>
-                <li>
-                    <a href="#">Sale Exclusions</a>
-                </li>
-                <li>
-                    <a href="#">Shipping & Returns</a>
-                </li>
-                <li>
-                    <a href="#">Terms & Conditions</a>
-                </li>
-                <li>
-                    <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#">Search</a>
-                </li>
-            </ul>
-            <p>Copyright © 2018 Dlk • Design Life Kids</p>
-        </div>
-        <div class="connect">
-            <p>Connect</p>
-            <input type="text" name="email" class="email_input">
-            <button class="email">Join</button>
-            <ul class="soc_network">
-                <li>
-                    <img src="#" alt="">
-                </li>
-                <li>
-                    <img src="#" alt="">
-                </li>
-                <li>
-                    <img src="#" alt="">
-                </li>
-                <li>
-                    <img src="#" alt="">
-                </li>
-            </ul>
-            <p>Web Design — Direct Line Development</p>
+        <hr class="line2">
+        <div class="footer__end container">
+            <div class="footer_rating">
+                <span class="text-rating">Company Rating</span>
+                <div class="rating">
+                    <input id="star-5" type="radio" class="rating__input" name="rating" value="5">
+                    <label for="star-5" class="rating__label" title="Rating five"></label>
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4" title="Rating four"></label>
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3" title="Rating three"></label>
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2" title="Rating two"></label>
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1" title="Rating one"></label>
+                </div>
+            </div> 
+            <div>
+                <a class="a_footer" href="#">Copyright © 2018 Dlk • Design Life Kids</a>
+            </div>
+            <div class="a_footer">
+                <a class="a_footer" href="#">Web Design — Direct Line Development</a>
+            </div>
         </div>
     </footer>
 </body>

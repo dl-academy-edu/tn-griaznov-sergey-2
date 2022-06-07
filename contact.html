@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Contact Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header class="header container">
@@ -30,46 +30,51 @@
         <a href="#"><img src="images/header/search.png" alt="#" class="header__look"></a>
         <a href="contact.html" class="header__link-2">Contact  Us</a>
     </header>
-    <section class="categories container">
-        <h1 class="h1">Category Products</h1>
+    <section class="contact container">
+        <h1 class="h1">Contact  Us</h1>
         <ul class="breadcrumbs">
             <li><a href="index.html">Home</a></li>
             <li><img src="images/common/breadcrumbs/vector.png" alt="vector"></li>
-            <li><p>Catalog</p></li>
+            <li><p>Contact Us</p></li>
         </ul>
-        <ul class="categories__ul1">
-            <li class="categories__item1 categories__space">                       
-                <a class="categories__line" href="#">APPAREL KIDS</a>
-            </li>
-            <li class="categories__item2 categories__space">
-                <a class="categories__line" href="#">HOLIDAY SHOP</a>
-            </li>
-            <li class="categories__item3">
-                <a class="categories__line" href="toys.html">TOYS</a>
-            </li>
-        </ul>    
-        <ul class="categories__ul2">
-            <li class="categories__item4 categories__space">
-                <a class="categories__line" href="#">ACCESSORIES</a>
-            </li>
-            <li class="categories__item5 categories__space">
-                <a class="categories__line" href="#">SALE</a>
-            </li>
-            <li class="categories__item6">
-                <a class="categories__line" href="#">APPAREL ADULTS</a>
-            </li>
-        </ul>
-        <h2 class="categories__h2">Product Description</h2>
-        <div class="categories__p">
-            <p class="categories__p1">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and 
-                almost really cry. You can even bathe her, just like a little sister.</p>
-            <p class="categories__p2">A toy with a height of 43 cm bends its knees, the head rotates, it can stand
-                upright. Such a doll will be an excellent choice for a gift for a girl from
-                4 years old.</p>
-            <p class="categories__p3">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle 
-                for water, a pair of hairpins and elastic bands for hair, as well as two 
-                bracelets: one for the doll, the other for her young mistress.</p> 
-        </div> 
+        <div class="contact__info">
+            <form action="#" class="form">
+                <div class="form__item">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" placeholder="Ivan Ivanov">
+                </div>
+                <div class="form__info">
+                    <div class="form__item form__phone">
+                        <label for="contact-phone">Phone</label>
+                        <input type="text" id="contact-phone">
+                    </div>
+                    <div class="form__item">
+                        <label for="contact-email">Email</label>
+                        <input type="text" id="contact-email">
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message"></textarea>
+                </div>
+                <div class="form__checkbox">
+                    <input type="checkbox" id="contact-agreement" class="checkbox-input" checked>
+                    <label for="contact-agreement" class="checkbox-label">By clicking on the button, you consent to the processing of your personal data</label>
+                </div>
+                <button type="submit" class="button">Submit</button>
+            </form>
+            <div class="contact__text">
+                <p class="contact__p">
+                    Our support team are on-hand to assist with any issues you are experiencing.
+                </p>
+                <p class="contact__p">
+                    Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
+                </p>
+                <p class="contact__p-gold">
+                    An expert is waiting to help you!
+                </p>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__basic container">
